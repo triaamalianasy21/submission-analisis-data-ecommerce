@@ -29,13 +29,13 @@ with st.sidebar:
     max_date = all_data["order_purchase_timestamp"].max().date()
     
     # Input Rentang Waktu (Interaktif)
-     user_input = st.date_input(
-            label='Rentang Waktu',
-            min_value=min_date,
-            max_value=max_date,
-            value=[min_date, max_date]
-        )
-        
+user_input = st.date_input(
+    label='Rentang Waktu',
+    min_value=min_date,
+    max_value=max_date,
+    value=[min_date, max_date]
+)
+
     try: 
         # Logika proteksi agar tidak error saat user baru klik 1 tanggal
         if len(user_input) == 2:
