@@ -36,15 +36,15 @@ user_input = st.date_input(
     value=[min_date, max_date]
 )
 
-    try: 
+try: 
         # Logika proteksi agar tidak error saat user baru klik 1 tanggal
-        if len(user_input) == 2:
-            start_date, end_date = user_input
-        else:
-            start_date, end_date = user_input[0], user_input[0]
+    if len(user_input) == 2:
+        start_date, end_date = user_input
+    else:
+        start_date, end_date = user_input[0], user_input[0]
             
-    except Exception:
-        start_date, end_date = min_date, max_date
+except Exception:
+    start_date, end_date = min_date, max_date
 
     st.markdown("<br>" * 15, unsafe_allow_html=True)
     
