@@ -1,1 +1,3 @@
 https://github.com/triaamalianasy21/submission-analisis-data-ecommerce
+
+https://dashboard-ecommerce-tria.streamlit.app/
