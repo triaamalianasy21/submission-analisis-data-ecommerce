@@ -46,6 +46,8 @@ with st.sidebar:
     except Exception:
         start_date, end_date = min_date, max_date
 
+    st.markdown("<br>" * 15, unsafe_allow_html=True)
+    
 # Filter data utama berdasarkan input tanggal di sidebar
 main_df = all_data[(all_data["order_purchase_timestamp"] >= str(start_date)) & 
                 (all_data["order_purchase_timestamp"] <= str(end_date))]
