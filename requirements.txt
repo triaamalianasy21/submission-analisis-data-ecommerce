@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pandas
 numpy
 matplotlib
@@ -6,13 +5,4 @@ seaborn
 streamlit
 missingno
 plotly
-=======
-pandas
-numpy
-matplotlib
-seaborn
-streamlit
-missingno
-plotly
->>>>>>> 8df0bda (sinkronisasi file sebelum push)
 babel
