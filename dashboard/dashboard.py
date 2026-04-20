@@ -9,7 +9,8 @@ sns.set(style='dark')
 # 1. Menyiapkan Data
 # Pastikan file all_data.csv berada di folder yang sama dengan file dashboard.py ini
 datetime_columns = ["order_purchase_timestamp"]
-all_data = pd.read_csv("all_data.csv")
+path = os.path.join(os.path.dirname(__file__), 'all_data.csv')
+all_data = pd.read_csv(path)
 all_data.sort_values(by="order_purchase_timestamp", inplace=True)
 all_data.reset_index(drop=True, inplace=True)
 
